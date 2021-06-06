@@ -18,3 +18,23 @@ Push the value from the inputEl into the myLeads array
 
 HTML-Create an unordered list element (<ul>) with id="ul-el" -->
 JS- Grab the unordered list and store it in a const variable called ulEl
+
+//Use createElement() and append() instead of innerHTML
+const li = document.createElement("li")
+li.textContent = myLeads[i]
+ulEl.append(li)
+
+Wrap the lead in an anchor tag (<a>) inside the <li>
+Can you make the link open in a new tab?
+
+  for (let i = 0; i < myLeads.length; i++) {
+     // listItems += "<li><a target='_blank' href='" + myLeads[i] + "'>" + myLeads[i] + "</a></li>"
+     // template strings/template literals provide cleaner code   
+        listItems += `
+            <li>
+                <a target='_blank' href='${myLeads[i]}'>
+                    ${myLeads[i]}
+                </a>
+            </li>
+        `
+    }
