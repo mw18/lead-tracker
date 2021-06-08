@@ -38,3 +38,8 @@ Can you make the link open in a new tab?
             </li>
         `
     }
+
+Turn the myLeads string into an array
+Push a new value to the array
+Turn the array into a string again
+Console.log the string using typeof to verify that it's a string
